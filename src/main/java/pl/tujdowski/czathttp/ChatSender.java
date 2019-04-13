@@ -25,6 +25,7 @@ public class ChatSender {
                 Void.class
         );
 
+        ChatApi.chatMessage.add(chatMessage);
         model.addAttribute("chatMessage", new ChatMessage());
         return "sendMessage";
     }

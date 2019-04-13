@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="refresh" content="1">
+</head>
+<body>
+
+<!--<p th:text="${chatMessage.getValue()}" />-->
+
+<div th:if="${chatMessage != null}">
+    <h1>Result</h1>
+    <ul>
+        <li th:each="item : ${chatMessage}" th:text="${item.getValue()}">Item description here...</li>
+    </ul>
+</div>
+
+</body>
+</html>
