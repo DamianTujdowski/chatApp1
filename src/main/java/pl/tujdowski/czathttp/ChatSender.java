@@ -30,9 +30,5 @@ public class ChatSender {
         return "sendMessage";
     }
 
-    @GetMapping("/sendMessage")
-    public String get(Model model) {
-        model.addAttribute("chatMessage", new ChatMessage());
-        return "sendMessage";
-    }
+
 }
